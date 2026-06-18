@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>搜索 - 日韩影视免费看</title>
+  <meta name="description" content="静态全站搜索页面，可按标题、地区、类型、题材、简介和标签检索 2000 部影片。">
+  <meta name="theme-color" content="#0f172a">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/search-data.js"></script>
+</head>
+<body class="">
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="site-brand">
+        <span class="site-brand__mark">影</span>
+        <div class="site-brand__text">
+          <strong>日韩影视免费看</strong>
+          <span>静态化片库</span>
+        </div>
+      </div>
+      <nav class="site-nav"><a class="nav-link" href="index.html">首页</a><a class="nav-link" href="catalog.html">片库</a><a class="nav-link" href="ranking.html">热榜</a><a class="nav-link is-active" href="search.html">搜索</a><a class="nav-link" href="about.html">关于</a></nav>
+      <button class="menu-toggle" type="button" aria-label="打开菜单" data-menu-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+    <div class="mobile-nav" data-mobile-nav>
+      <a class="mobile-nav-link" href="index.html">首页</a><a class="mobile-nav-link" href="catalog.html">片库</a><a class="mobile-nav-link" href="ranking.html">热榜</a><a class="mobile-nav-link is-active" href="search.html">搜索</a><a class="mobile-nav-link" href="about.html">关于</a>
+    </div>
+    
+    <section class="hero">
+      <div class="hero__head">
+        <div class="hero__copy">
+          <span class="section-kicker">搜索页</span>
+          <h1>一键检索 2000 部影片</h1>
+          <p>支持标题、题材、地区、类型、简介与标签检索，也可按年份和排序方式快速筛选。</p>
+          <div class="hero__actions">
+            <a class="btn btn-primary" href="catalog.html">回到片库</a>
+            <a class="btn btn-ghost" href="ranking.html">查看热榜</a>
+          </div>
+        </div>
+        <div class="hero__feature">
+          <div class="detail-poster" style="--g1:#4f1bde; --g2:#a21a79; --g3:#536425;">
+            <div class="detail-poster__kicker">全文检索</div>
+            <div class="detail-poster__year">2000 条</div>
+            <div class="detail-poster__title">快速搜索</div>
+            <div class="detail-poster__meta">标题 / 题材 / 地区 / 标签</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section search-panel" data-search-page>
+      <div class="section__head">
+        <div>
+          <h2>搜索与筛选</h2>
+          <p>输入关键词后即可筛选全量影片，并按类型、地区、题材和年份排序。</p>
+        </div>
+        <div class="note">结果：<strong data-search-count>0 部</strong></div>
+      </div>
+      <div class="filter-bar">
+        <input class="search-box" type="search" placeholder="搜索标题、简介、标签、题材..." data-search-input value="">
+        <select class="select-box" data-search-type>
+          <option value="">全部类型</option>
+          <option value="电影">电影</option><option value="剧集">剧集</option><option value="电视剧">电视剧</option><option value="动画电影">动画电影</option><option value="动画剧集">动画剧集</option><option value="综艺">综艺</option><option value="网络电影">网络电影</option><option value="纪录片">纪录片</option>
+        </select>
+        <select class="select-box" data-search-region>
+          <option value="">全部地区</option>
+          <option value="中国大陆">中国大陆</option><option value="美国">美国</option><option value="日本">日本</option><option value="中国香港">中国香港</option><option value="韩国">韩国</option><option value="英国">英国</option><option value="中国台湾">中国台湾</option><option value="法国">法国</option><option value="中国">中国</option><option value="泰国">泰国</option>
+        </select>
+        <select class="select-box" data-search-sort>
+          <option value="score">综合热度</option>
+          <option value="year_desc">最新优先</option>
+          <option value="year_asc">最早优先</option>
+          <option value="title">标题排序</option>
+        </select>
+      </div>
+      <div class="tabs">
+        <span class="tab is-active">题材速筛</span>
+        <select class="select-box" data-search-genre style="max-width:220px">
+          <option value="">全部题材</option>
+          <option value="剧情">剧情</option><option value="喜剧">喜剧</option><option value="悬疑">悬疑</option><option value="爱情">爱情</option><option value="动作">动作</option><option value="犯罪">犯罪</option><option value="奇幻">奇幻</option><option value="家庭">家庭</option><option value="惊悚">惊悚</option><option value="科幻">科幻</option><option value="冒险">冒险</option><option value="历史">历史</option>
+        </select>
+      </div>
+      <div class="search-results" data-search-results></div>
+    </section>
+    
+    <footer class="site-footer">
+      <div>
+        <strong>日韩影视免费看</strong>
+        <p>共收录 2000 部影片，覆盖 65 种类型、122 个地区、275 个常见题材。</p>
+      </div>
+      <div class="site-footer__links">
+        <a href="catalog.html">片库</a>
+        <a href="ranking.html">热榜</a>
+        <a href="search.html">搜索</a>
+        <a href="about.html">关于</a>
+      </div>
+    </footer>
+  </div>
+  <button class="to-top" type="button" aria-label="返回顶部" data-to-top>↑</button>
+  <script src="assets/site.js"></script>
+  <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
